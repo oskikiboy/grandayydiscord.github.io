@@ -15,6 +15,7 @@
 <meta content="Woah." property="og:description" />
 <meta name="keywords" content="Grandayy, Keemstar, We Are Number One, Tags">
 <!-- Text Font -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
 <style>
 html {
@@ -27,13 +28,22 @@ font-family: 'Hind Siliguri', sans-serif;
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  <script type="text/javascript" src="js/materialize.min.js"></script>
 <!-- Nav Bar -->
- <nav>
-    <div class="nav-wrapper-fixed">
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
+  <nav>
+    <div class="navbar-fixed">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"><i class="material-icons">home</i></a></li>
         <li><a href="#">Rules</a></li>
         <li><a href="#">Roles</a></li>
-       <li><a href="#">Staff Rules</a>/li>
+        <li><a href="#">The Staff</a></li>
+        <li><a href="#">Staff Rules</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#"><i class="material-icons">home</i></a></li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Roles</a></li>
+        <li><a href="#">The Staff</a></li>
+        <li><a href="#">Staff Rules</a></li>
       </ul>
     </div>
   </nav>
