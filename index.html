@@ -26,13 +26,14 @@ font-family: 'Hind Siliguri', sans-serif;
 <body>
 <!-- JS Stuff -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
- <script type="text/javascript" src="js/materialize.min.js"></script>
+ <script type="text/javascript" src=js/materialize.min.js"></script>
  <script>
+$( document ).ready(function(){})
     $('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 300
-      edge: 'right', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true, // Choose whether you can drag to open on touch screens,
+      menuWidth: 300,
+      edge: 'left',
+      closeOnClick: true,
+      draggable: true,
     }
   );
  </script>
@@ -40,7 +41,7 @@ font-family: 'Hind Siliguri', sans-serif;
   <nav>
     <div class="nav-wrapper fixed">
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="left hide-on-med-and-down">
         <li><a href="#"><i class="material-icons">home</i></a></li>
         <li><a href="#">Rules</a></li>
         <li><a href="#">Roles</a></li>
