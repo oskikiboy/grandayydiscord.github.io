@@ -4252,12 +4252,30 @@ nav .nav-wrapper {
   }
 }
 
+@media only screen and (min-width: 993px) {
+  nav a.ha {
+    display: none;
+  }
+}
+
 nav .button-collapse {
   float: left;
   position: relative;
   z-index: 1;
   height: 56px;
   margin: 0 18px;
+}
+
+nav .ha {
+  float: right;
+  position: relative;
+  height: 56px;
+  margin: 0 15%;
+}
+
+nav .ha i {
+  height: 56px;
+  line-height: 56px;
 }
 
 nav .button-collapse i {
@@ -4412,7 +4430,7 @@ nav .input-field label.active i {
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
   }
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i, nav a.ha, nav a.ha i {
     height: 64px;
     line-height: 64px;
   }
@@ -6882,7 +6900,7 @@ form p:last-child {
 }
 
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #84c7c1;
+  background-color: black;
 }
 
 .switch label input[type=checkbox]:checked + .lever:before, .switch label input[type=checkbox]:checked + .lever:after {
@@ -6890,7 +6908,7 @@ form p:last-child {
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #26a69a;
+  background-color: #b1b1b1;
 }
 
 .switch label .lever {
