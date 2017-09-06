@@ -77,8 +77,9 @@ color: white;
  <script>
  var darkEnabled = false;
 $(document).ready(function() {
-       $("#dark").on("click", switchDarkMode);
+       $("#dark2").on("click", switchDarkMode);
        $("#reset").on("click", reset);
+       $("#dark1").on("click", switchDarkMode);
        }
      );
 
@@ -114,7 +115,7 @@ $(document).ready(function(){
 <a data-activates="mobile-demo" class="ok ha"><div class="switch" style="margin-left:80%;">
        <form action="">
 <label style="font-size:15px;color:black;">
-  <input type="checkbox" id="dark">
+  <input type="checkbox" id="dark1">
   <span class="lever"></span>
 </label>
 </div></a>
@@ -130,7 +131,7 @@ $(document).ready(function(){
                <form action="">
         <label style="font-size:15px;color:black;">
           Dark
-          <input type="checkbox" id="dark">
+          <input type="checkbox" id="dark2">
           <span class="lever"></span>
           Light
         </label>
