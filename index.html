@@ -36,14 +36,19 @@ font-family: 'Hind Siliguri', sans-serif;
 .jeff:hover {
   background-color: #efefef;
  }
+    .parallax-container {
+      height: 300px;
+    }
 </style>
 </head>
 <body>
 <!-- JS Stuff -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  <script>
-$(document).ready(function(){
+  $(document).ready(function(){
       $('.parallax').parallax();
+    });
+$(document).ready(function(){
     $('.button-collapse').sideNav({
   menuWidth: 300,
   edge: 'left',
