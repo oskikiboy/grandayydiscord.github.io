@@ -2,108 +2,29 @@
 <html lang="en">
   <head>
     <title>Grandayy's Server</title>
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="/yep.png" property="og:image" />
     <link rel="icon" href="/yep.png" type="image/x-icon">
     <meta name="theme-color" content="gray">
-    <meta content="/yep.png" property="og:image" />
-    <meta content="Grandayy's Server" property="og:title" />
-    <meta content="Woah." property="og:description" />
+    <meta name="application-name" content="Grandayy's Server" />
+    <meta name="description" content="Woah." />
     <meta name="keywords" content="Grandayy, Keemstar, We Are Number One, Tags">
-    <!-- Text Font -->
+    <!-- Style sheets -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Hind Siliguri', sans-serif;
-        background-color: #232323;
-        color: white;
-        transition: background-color 0.5s;
-      }
-      .nav {
-        background-color: white;
-      }
-      .ok {
-        color: black;
-      }
-      .jeff {
-        background-color: white;
-        color: black;
-      }
-      .jeff:hover {
-        background-color: #efefef;
-      }
-      .parallax-container {
-        height: 500px;
-      }
-      .hat {
-        background-color: #1A1A1A;
-        transition: background-color 0.5s;
-      }
-      .header {
-        margin-top:-0px;
-      }
-
-      .p {
-        margin-top:-30px;
-        font-size: 20px;
-      }
-      .darkmode {
-        font-family: 'Hind Siliguri', sans-serif;
-        background-color: white;
-        color: black;
-        transition: background-color 0.5s;
-      }
-      .darkmode .jeff {
-        background-color: black;
-        transition: background-color 0.5s;
-        color: white;
-      }
-      .darkmode .hat {
-        background-color: #CECECE;
-        transition: background-color 0.5s;
-      }
-    </style>
+    <link rel="stylesheet" href="css/emojione.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- JS Stuff -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/emojione.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      var darkEnabled = false;
-      $(document).ready(function() {
-        $("#dark2").on("click", switchDarkMode);
-        $("#reset").on("click", reset);
-        $("#dark1").on("click", switchDarkMode);
-      });
-
-      function switchDarkMode(){
-        darkEnabled = !darkEnabled;
-        if(darkEnabled){
-          $("body").addClass("darkmode");
-        } else {
-          $("body").removeClass("darkmode");
-        }
-      }
-
-      function reset(){
-        $("body").removeClass("darkmode");
-      }
-      $(document).ready(function(){
-        $('.parallax').parallax();
-      });
-      $(document).ready(function(){
-        $('.button-collapse').sideNav({
-          menuWidth: '300',
-          edge: 'left',
-          closeOnClick: 'true',
-          draggable: 'true',
-        });
-      })
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
     <!-- Nav Bar -->
     <nav>
       <div class="fixed nav-wrapper">
@@ -176,7 +97,7 @@
         <p class="p">
           Well.... um.... because.... <b>GRANDAYY IS ON THE SERVER </b><img width="50px" height="30px" src="https://www.rooshvforum.com/images/smilies/facepalm.png"><br>
           and we have cookies.<br>
-          <i>(btw he doesn't talk <b>much</b> :/)</i>
+          <i><script>document.write(emojione.toImage("(btw he doesn't talk <b>much</b> 😕)"))</script></i>
         </p>
       </center>
     </div>
