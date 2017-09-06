@@ -8,7 +8,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="icon" href="/yep.png" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="theme-color" content="gray">
 <meta content="/yep.png" property="og:image" />
 <meta content="Grandayy's Server" property="og:title" />
@@ -25,6 +24,7 @@ font-family: 'Hind Siliguri', sans-serif;
 }
 .nav {
  background-color: white;
+
  }
  .ok {
    color: black;
@@ -37,7 +37,18 @@ font-family: 'Hind Siliguri', sans-serif;
   background-color: #efefef;
  }
     .parallax-container {
-      height: 300px;
+      height: 500px;
+    }
+    .hat {
+      background-color: #1A1A1A;
+    }
+    .header {
+      margin-top:-0px;
+    }
+
+    .p {
+      margin-top:-30px;
+      font-size: 20px;
     }
 </style>
 </head>
@@ -51,16 +62,17 @@ font-family: 'Hind Siliguri', sans-serif;
     });
 $(document).ready(function(){
     $('.button-collapse').sideNav({
-  menuWidth: 300,
+  menuWidth: '300',
   edge: 'left',
-  closeOnClick: true,
-  draggable: true, 
+  closeOnClick: 'true',
+  draggable: 'true',
+})
 })
 </script>
 <!-- Nav Bar -->
   <nav>
-    <div class="nav-wrapper fixed">
-      <a href="#" ok data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <div class="fixed nav-wrapper">
+      <a href="#"  data-activates="mobile-demo" class="ok button-collapse"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
         <li><a class="ok" href="#"><i class="material-icons">home</i></a></li>
         <li><a class="ok" href="#">Rules</a></li>
@@ -79,16 +91,21 @@ $(document).ready(function(){
   </nav>
 <!-- Header -->
  <div class="parallax-container">
-    <div class="parallax"><img src="backgroundsmh.png"></div>
-  <center><h1><b>Grandayy's Server.</b></h1>
-<a href="#" class="jeff waves-effect waves-light btn"><i class="material-icons left">add</i>Join The Server!</a></center>
+    <div class="parallax"></div>
+    <br>
+  <center><img width="300px" height="300px" style="margin-bottom:-50px;" src="logo.png">
+<h1><b>Grandayy's Server.</b></h1>
+<a style="margin-top:-10px;" href="https://discord.gg/nHkKRBt" class="jeff waves-effect waves-light btn"><i class="material-icons left">add</i>Join The Server!</a></center>
   </div>
-  <div class="section grey">
+  <div class="section hat">
     <div class="row container">
-     <center><h1>Who or what is <b>Grandayy?</b></h1></center>
+     <center><h1 class="header">Who or what is <b>Grandayy?</b></h1></center>
     </div>
        <div class="row container">
-<center><p>Grandayy is a popular memer who lives in <b>Malta</b> with over 300k subs and a growing memebase.<br>He wasn't always "grandayy" he also owns a channel called "grande1899".<br>It is a minecraft note blocked based channel which played songs via noteblocks. So you better play that noteblock nicely.</p></center>
+<center><p class="p">Grandayy is a popular memer who lives in <b>Malta</b> with over 300k subs and a growing memebase.<br>He wasn't always "grandayy" he also owns a channel called "grande1899".<br>It is a minecraft note blocked based channel which played songs via noteblocks. So you better play that noteblock nicely.</p>
+  <hr>
+<h1 class="header">So why should <i>I</i> join this <i>server?</i></h1>
+<p class="p">Well.... um.... because.... <b>GRANDAYY IS ON THE SERVER </b><img width="50px" height="30px" src="https://www.rooshvforum.com/images/smilies/facepalm.png"><br>and we have cookies.<br><i>(btw he doesn't talk <b>much</b> :/)</i></p></center>
 </div>
 </body>
 </html>
