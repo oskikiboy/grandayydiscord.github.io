@@ -20,6 +20,9 @@ body {
 .parallax-container {
   height: 500px;
 }
+.keemstar {
+  height: 200px;
+}
 .hat {
   background-color: #1A1A1A;
   transition: background-color 0.5s;
