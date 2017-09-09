@@ -13,6 +13,10 @@ body {
   margin-bottom: -30px;
 }
 
+#membercount {
+  margin-bottom: 15px;
+}
+
 .nav {
   background-color: white;
 }
