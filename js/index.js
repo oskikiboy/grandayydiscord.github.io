@@ -14,5 +14,5 @@ $(document).ready(function() {
       setTimeout(checkCount, 45000);
     });
   }
-  checkCount();
+  //checkCount(); // Without this function being called, nothing can happen
 });

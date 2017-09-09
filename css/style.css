@@ -14,7 +14,9 @@ body {
 }
 
 #membercount {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .nav {
