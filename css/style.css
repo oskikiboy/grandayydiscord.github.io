@@ -19,11 +19,27 @@ body {
   padding-top: 0px;
 }
 
+.discrim {
+  color: #B3B3B3;
+  font-weight: lighter;
+}
+
+.bot-nickname {
+  color: #546e7a;
+  font-weight: lighter;
+}
+.modal {
+  color: black;
+}
+
 .nav {
   background-color: white;
 }
 .ok {
   color: black;
+}
+.clickable {
+  cursor: pointer;
 }
 .jeff {
   background-color: white;

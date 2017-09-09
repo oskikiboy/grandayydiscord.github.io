@@ -10,7 +10,7 @@
     <link rel="icon" href="/yep.png" type="image/x-icon">
     <meta name="theme-color" content="gray">
     <meta name="application-name" content="Grandayy's Server" />
-    <meta name="description" content="Woah." />
+    <meta name="description" content="Rules" />
     <meta name="keywords" content="Grandayy, Keemstar, We Are Number One, Tags">
     <!-- Style sheets -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,11 +22,10 @@
   <body>
     <!-- JS Stuff -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/animationCounter.min.js"></script>
     <script src="js/emojione.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/bots.js"></script>
     <!-- Nav Bar -->
     <nav>
       <div class="fixed nav-wrapper">
@@ -70,43 +69,64 @@
       </div>
     </nav>
     <!-- Header -->
-    <div class="parallax-container">
+    <div class="parallax-container keemstar">
       <div class="parallax"></div>
       <br>
       <center>
-        <img id="grandayylogo" src="http://hobit.unhfree.net:4911/guild/306061550693777409/icon.png">
-        <h1><b>Grandayy's Server.</b></h1>
-        <h5>With over <span id="membercount">
-          2500
-        </span> members and counting, join the biggest memer's Discord server today!</h5>
-        <a style="margin-top:-10px;" href="https://discord.gg/nHkKRBt" class="jeff waves-effect waves-light btn"><i class="material-icons left">add</i>Join The Server!</a>
+        <h1><b>Bots</b></h1>
       </center>
     </div>
+    <!-- Bot modals -->
+    <div id="mee6" class="modal">
+      <div class="modal-content">
+        <h4>Mee6<span class="discrim">#4876</span></h4>
+        <span class="bot-nickname">Nicknamed as <b>Meatman</b> on the server.</span><br>
+        <p>Mee6 is a very famous bot for levels.<br>
+          When you chat (<b>Not</b> spam!), you periodically get XP, which levels you up.<br>
+          Upon reaching a certain level, you can either wait for the bot to give you the role, or ask @<b>Staff</b> to give it to you.<br><br>
+          Grandayy's server leaderboard: <a href="http://mee6.xyz/levels/306061550693777409">http://mee6.xyz/levels/306061550693777409</a><br><br>
+          <h5>Common Commands:</h5>
+          - !rank<br>
+          - !levels<br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+    <div id="connect4" class="modal">
+      <div class="modal-content">
+        <h4>Connect4<span class="discrim">#3064</span></h4>
+        <span class="bot-nickname">Nicknamed as <b>Connbot</b> on the server.</span><br>
+        <p>Connect4 is a bot for playing, well, Connect4<br>
+          Either with someone on the server or with an AI.<br><br>
+          <h5>Common Commands:</h5>
+          - !c4 play <i>@<b>mention</b></i>/@<b>Connect4#3064</b><br>
+          - !c4 party leave<br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+    <!-- Bot containers -->
+    <div class="section hat">
       <div class="row container">
-        <center><h1 class="header">FAQ</h1></center>
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div id="ok" class="collapsible-header" style="color:black;">Who or what is Grandayy?</div>
-            <div class="collapsible-body"><center><span>Grandayy is a popular memer who lives in <b>Malta</b> with over 400k subs and a growing memebase.<br>
-          He wasn't always "grandayy" he also owns a channel called "grande1899".<br>
-          It is a minecraft note blocked based channel which played songs via noteblocks. So you better play that noteblock nicely.</span></center></div>
+        <center><h5>Click on a bot to show a more detailed descriptions and commands.</h5></center>
+        <ul class="collection" style="color: black;">
+          <li class="collection-item avatar clickable modal-trigger" href="#mee6">
+            <img src="https://cdn.discordapp.com/avatars/159985870458322944/675866cce22f49524a5d25e61859d23e.png" alt="" class="circle">
+            <span class="title"><b>Mee6</b></span>
+            <p>Levels Bot<br>
+               !help
+            </p>
           </li>
-          <li>
-            <div id="ok" class="collapsible-header" style="color:black;">So why should I join the server?</div>
-            <div class="collapsible-body"><center><span>Well.... um.... because.... <b>GRANDAYY IS ON THE SERVER </b><img width="50px" height="30px" src="https://www.rooshvforum.com/images/smilies/facepalm.png"><br>
-          and we have cookies.<br>
-          <i><script>document.write(emojione.toImage("(btw he doesn't talk <b>much</b> 😕)"))</script></i></span></center></div>
-          </li>
-          <li>
-            <div class="collapsible-header" style="color:black;">How can I contact Grandayy?</div>
-            <div class="collapsible-body"><center><span>You can contact him via his <a href="mailto:grande1899@gmail.com" title="grande1899@gmail.com">email</a>,
-              <a href="https://www.twitter.com/grande1899/" target="_blank">Twitter</a> and <a href="https://www.facebook.com/grandayy/" target="_blank">Facebook</a>.<br>
-              He doesn't respond to Discord DM's sadly.
-            </span></center></div>
-          </li>
-          <li>
-            <div id="ok" class="collapsible-header" style="color:black;">I joined the server and I'm stuck with 4 channels, what am I supposed to do?</div>
-            <div class="collapsible-body"><center><span>You can do <b>[enlist</b>, <b>/enlist</b> or <b>p.enlist</b> in the #<b>welcome</b> text channel. If those commands don't work, then contact a Villain ASAP.</span></center></div>
+          <li class="collection-item avatar clickable modal-trigger" href="#connect4">
+            <img src="https://cdn.discordapp.com/avatars/321278762773643265/da4a4846aaa31b140517d84e66346d15.png" alt="" class="circle">
+            <span class="title"><b>Connect4</b></span>
+            <p>Games Bot<br>
+               !c4 help
+            </p>
           </li>
         </ul>
       </div>
